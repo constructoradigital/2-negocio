@@ -9,7 +9,8 @@ import {Button} from '../../globalStyles'
 
     const [click,setClick] =useState(false);
     const [button, setButton] = useState(true)
-    
+    const logoClickClose = ()=> setClick(false);
+
     const handleClick = ()=> setClick(!click);
     
     const showButton = ()=>{
@@ -31,7 +32,7 @@ import {Button} from '../../globalStyles'
         <IconContext.Provider value={{color:'#fff'}}>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to="/" onClick={handleClick} click={click}>
+                    <NavLogo to="/" onClick={logoClickClose} >
                         <NavIcon/>
                         ULTRA
                     </NavLogo>

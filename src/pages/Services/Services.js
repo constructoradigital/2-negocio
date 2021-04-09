@@ -1,7 +1,7 @@
 import React from 'react'
 import {InfoSection}  from '../../components'
 import Pricing from '../../components/Pricing/Pricing';
-import { homeObjFour } from './Data';
+import {  homeObjFour } from '../HomePage/Data';
 
  const Home = () => {
     return (
