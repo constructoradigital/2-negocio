@@ -1,6 +1,6 @@
 import React from 'react';
 import GlobalStyle from './globalStyles'
-import { BrowserRouter as Router, Switch,Route } from "react-router-dom";
+import { HashRouter, Switch,Route } from "react-router-dom";
 import  Home  from './pages/HomePage/Home';
 import { Navbar } from "./components/index";
 import Footer from './components/Footer/Footer';
@@ -12,7 +12,7 @@ import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
 
-      <Router>
+      <HashRouter>
         <GlobalStyle/>
         <ScrollToTop/>
       <Navbar/>
@@ -23,7 +23,7 @@ function App() {
         <Route path="/sign-up"  component={Signup} />
       </Switch>
       <Footer/>
-      </Router>
+      </HashRouter>
 
   );
 }
